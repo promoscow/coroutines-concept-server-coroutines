@@ -9,5 +9,5 @@ class IoServiceImpl(
     private val client: IoClient
 ) : IoService {
 
-    override suspend fun get(): String = client.get()
+    override suspend fun get(taskId: String): String = client.get(taskId)
 }

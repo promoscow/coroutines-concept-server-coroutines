@@ -10,10 +10,10 @@ class IoClientImpl(
     private val client: WebClient
 ) : IoClient {
 
-    override suspend fun get(): String =
+    override suspend fun get(taskId: String): String =
         client
             .get()
-            .uri("/api/io")
+            .uri("/api/io/task/{taskId}", taskId)
             .retrieve()
             .bodyToMono(String::class.java)
             .awaitSingle()
