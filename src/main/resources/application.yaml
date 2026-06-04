@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: coroutines-concept-server-coroutines
+server:
+  port: 8011
