@@ -20,6 +20,8 @@ services:
     container_name: client
     ports:
       - "8001:8001"
+    environment:
+      - APP_REQUESTS_PER_SECOND=1000
     depends_on:
       - server
     networks:
