@@ -2,5 +2,5 @@ package ru.chernyshoff.server.coroutines.dao.client
 
 interface IoClient {
 
-    suspend fun get(taskId: String): String
+    suspend fun trace(traceId: String): String
 }

@@ -2,5 +2,5 @@ package ru.chernyshoff.server.coroutines.service
 
 interface IoService {
 
-    suspend fun get(taskId: String): String
+    suspend fun trace(traceId: String): String
 }

@@ -3,6 +3,8 @@ spring:
     name: coroutines-concept-server-coroutines
 server:
   port: 8011
+app:
+  service-prefix: server-coroutines
 management:
   endpoints:
     web:
