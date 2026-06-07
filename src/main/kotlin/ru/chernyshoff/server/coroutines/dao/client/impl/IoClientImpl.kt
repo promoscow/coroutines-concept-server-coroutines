@@ -13,7 +13,7 @@ class IoClientImpl(
     override suspend fun get(taskId: String): String =
         client
             .get()
-            .uri("/api/io/task/{taskId}", taskId)
+            .uri("http://io:8021/api/io/task/{taskId}", taskId)
             .retrieve()
             .bodyToMono(String::class.java)
             .awaitSingle()
