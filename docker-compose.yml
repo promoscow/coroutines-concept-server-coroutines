@@ -21,7 +21,7 @@ services:
     ports:
       - "8001:8001"
     environment:
-      - APP_REQUESTS_PER_SECOND=1000
+      - APP_REQUESTS_PER_SECOND=10000
     depends_on:
       - server
     networks:
